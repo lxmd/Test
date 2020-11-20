@@ -44,7 +44,7 @@ jobs:
         env:
           YOUTH_READ: ${{ secrets.YOUTH_VIDEO2 }}
 
-     - name: '运行 【中青看点账号2-视频观看1-55个】'
+      - name: '运行 【中青看点账号2-视频观看1-55个】'
         if: env.YOUTH_VIDEO3
         run: |
           node Task/Youth_Read.js
