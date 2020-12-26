@@ -50,7 +50,7 @@ const jsname = '企鹅读书'
 const $ = Env(jsname)
 let task = '', config, ssr2 = '', wktime, day = 0;
 console.log(`============ 脚本执行-北京时间(UTC+8)：${new Date(new Date().getTime() + 8 * 60 * 60 * 1000).toLocaleString()}  =============\n`)
-const notify = $.isNode() ? require('./sendNotify') : '';
+
 const logs = 1;   //0为关闭日志，1为开启
 
 const TIME = 30//单次时长上传限制，默认5分钟
