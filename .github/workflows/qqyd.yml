@@ -22,7 +22,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
         with:
-          repository: lxmd01/youth
+          repository: lxmd/Test
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v1
         with:
@@ -38,6 +38,8 @@ jobs:
         if: env.QQREAD_HEADER
         run: |
           npm install
+          npm install got
+          npm install tough-cookie
       - name: ' 运行 【企鹅阅读】'
         run: |
           node qqread.js
