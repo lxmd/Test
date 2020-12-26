@@ -45,7 +45,7 @@ let headers = [], timeurls = [], timeheaders = [];
   if ($.isNode()) {
     
 
-if (process.env.QQREAD_HEADER && process.env.QQREAD_HEADER.indexOf('#') > -1) {
+if (process.env.QQREAD_HEADER && process.env.QQREAD_HEADER.indexOf('\n') > -1) {
   headers = process.env.QQREAD_HEADER.split('#');
  } else {
     headers = process.env.QQREAD_HEADER.split();
@@ -55,7 +55,7 @@ if (process.env.QQREAD_HEADER && process.env.QQREAD_HEADER.indexOf('#') > -1) {
   } else {
     timeurls = process.env.QQREAD_TIMEURL.split();
    };
-  if (process.env.QQREAD_TIMEHEADER && process.env.QQREAD_TIMEHEADER.indexOf('#') > -1) {
+  if (process.env.QQREAD_TIMEHEADER && process.env.QQREAD_TIMEHEADER.indexOf('\n') > -1) {
    timeheaders = process.env.QQREAD_TIMEHEADER.split('#');
  } else {
    timeheaders = process.env.QQREAD_TIMEHEADER.split();
