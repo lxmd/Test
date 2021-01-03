@@ -54,7 +54,7 @@ console.log(`============ 脚本执行-北京时间(UTC+8)：${new Date(new Date
 const logs = 1;   //0为关闭日志，1为开启
 
 const TIME = 30//单次时长上传限制，默认5分钟
-const maxtime = 20//每日上传时长限制，默认20小时
+const maxtime = 10//每日上传时长限制，默认20小时
 const wktimess = 1200//周奖励领取标准，默认1200分钟
 let tz = '',kz;
 const qqreadbodyValKey = 'qqreadbodyVal'
